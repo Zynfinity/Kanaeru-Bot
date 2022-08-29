@@ -81,6 +81,7 @@ module.exports = {
 					}
 					else if(reason === DisconnectReason.loggedOut){
 						await m.reply('Device logout\nketik .jadibot, dan scan kembali')
+						delete conns[con.id]
 						con.end()
 					}
 					else if (reason === DisconnectReason.timedOut) {
@@ -95,7 +96,7 @@ module.exports = {
 						//connect();
 					}
 					else if (reason === DisconnectReason.badSession) {
-						const jteks = `Bad Session File, Please Delete ${config.session} and Scan Again`
+						const jteks = `Bad Session File, Please Delete Session and Scan Again`
 						await conn.sendMessage(con.id, {text: jteks})
 						delete conns[con.id]
                         con.end()
@@ -115,7 +116,7 @@ module.exports = {
 						delete conns[con.id]
                         con.end()
 					} else if (reason === DisconnectReason.loggedOut) {
-						console.log(`Device Logged Out, Please Delete ${config.session} and Scan Again.`);
+						console.log(`Device Logged Out, Please Delete Session and Scan Again.`);
 						const jteks = `Device Logged Out \nJadibot Stopped`
 						await conn.sendMessage(con.id, {text: jteks})
 						delete conns[con.id]
@@ -126,7 +127,6 @@ module.exports = {
 						delete conns[con.id]
                         con.end()
 					}
-					delete con
 				}
 			})
 			con.ev.on("messages.upsert", async (m) => {

@@ -100,7 +100,6 @@ global.ig = require('./lib/instagram')
 global.line = require('./lib/sosmed').line
 global.tele = require('./lib/sosmed').telegram
 global.rzky = new iky()
-global.caliph = require('caliph-api')
 global.shp = "•";
 global.db = database;
 module.exports = config;
