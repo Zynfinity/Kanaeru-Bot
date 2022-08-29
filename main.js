@@ -32,14 +32,14 @@ attr.functions = new Map();
 attr.isSelf = config.self;
 
 // store
-/*global.store = makeInMemoryStore({
+global.store = makeInMemoryStore({
 	logger: pino().child({ level: "silent", stream: "store" }),
-});*/
-global.store = makeInMemoryStore({ })
+});
+/*global.store = makeInMemoryStore({ })
 store.readFromFile('./baileys_store.json')
 setInterval(() => {
     store.writeToFile('./baileys_store.json')
-}, 10_000)
+}, 10_000)*/
 //readcmd
 const ReadFitur = () => {
 	let pathdir = path.join(__dirname, "./commands");
@@ -56,7 +56,7 @@ ReadFitur();
 const connect = async () => {
 	let { version, isLatest } = await fetchLatestBaileysVersion();
 	console.log(`Using: ${version}, newer: ${isLatest}`);
-	const conn = makeWASocket({
+	global.conn = makeWASocket({
 		printQRInTerminal: true,
 		auth: state,
 		browser: [config.botname, "Chrome", "1.0.0"],
@@ -66,7 +66,7 @@ const connect = async () => {
 	if(config.server) require("./lib/http-server")(conn);
 	conn.mess = [];
 	conn.cooldown = {}
-	global.decodeJid = (jid) => {
+	global.decodeJid = async(jid) => {
 		if (/:\d+@/gi.test(jid)) {
 			const decode = jidDecode(jid) || {};
 			return (

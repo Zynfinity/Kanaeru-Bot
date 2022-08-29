@@ -4,6 +4,7 @@ module.exports = {
 	cmd: ['asupantiktok', 'asupan'],
 	category: 'other',
 	query: true,
+	disabled: true,
 	async handler(m, {
 		conn,
 		text

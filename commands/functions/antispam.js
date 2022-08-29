@@ -4,7 +4,7 @@ module.exports = {
     antispam: true,
     function: true,
     async handler(m, {conn,  msgId, isOwner, zx}){
-        if(m.command){
+        if(m.command && m.type != 'buttonsResponseMessage' ){
             if(m.from in conn.cooldown == false){
                 conn.cooldown[m.from] = {
                     id: m.from,

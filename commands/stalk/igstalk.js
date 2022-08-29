@@ -3,7 +3,7 @@ module.exports = {
   param: '<username>',
   cmd: ['igstalk'],
   category: 'stalk',
-  desc: 'View igprofile',
+  desc: 'View ig profile',
   query: true,
   async handler(m, {conn, text}){
     await m.reply(response.wait)

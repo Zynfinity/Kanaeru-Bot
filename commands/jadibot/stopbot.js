@@ -15,7 +15,7 @@ module.exports = {
         await tool.sleep(1500)
         await m.reply('2')
         await tool.sleep(1500)
-        await m.reply('3')
+        await m.reply('1')
         await tool.sleep(1500)
         await m.reply('Sayonara User')
         await client.end()

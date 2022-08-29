@@ -1,4 +1,5 @@
 const {neonime} = require('../../lib/anime')
+const {extract} = require('zs-extract')
 module.exports = {
 	name: 'animedl',
 	cmd: ['animedl', 'animeget'],
@@ -8,9 +9,9 @@ module.exports = {
 		if(m.command == 'animeget'){
 			if(args[1] != m.sender) return m.reply(`This option is only for @${args[1].split('@')[0]}, please request first`, {withTag: true})
 			await m.reply(response.wait)
-			const down = await scrapp.zippysharedl(args[0])
-			if(!down.status) return m.reply('Link Download Error, Please select other Quality!')
-			return await conn.sendMessage(m.from, {document: {url: down.url}, mimetype: 'video/mp4', fileName: down.title}, {quoted: m})
+			const down = await extract(args[0]).catch(() => {error: true})
+			if(down.error) return m.reply('Link Download Error, Please select other Quality!')
+			return await conn.sendMessage(m.from, {document: {url: down.download}, mimetype: 'video/mp4', fileName: down.filename}, {quoted: m})
 		}
 		if(args[1] != m.sender) return m.reply(`This option is only for @${args[1].split('@')[0]}, please request first`, {withTag: true})
 		const data = await neonime.getData(args[0])

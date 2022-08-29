@@ -1,1 +1,35 @@
-{}
+{
+  "120363043681597923@g.us": {
+    "id": "120363043681597923@g.us",
+    "author": "6285696526470@s.whatsapp.net",
+    "konteks": null,
+    "members": []
+  },
+  "120363023859820647@g.us": {
+    "id": "120363023859820647@g.us",
+    "author": "6285772456180@s.whatsapp.net",
+    "konteks": null,
+    "members": [
+      {
+        "id": "6283152608804@s.whatsapp.net",
+        "absen": "sakit"
+      },
+      {
+        "id": "6281345081646@s.whatsapp.net",
+        "absen": "hadir"
+      },
+      {
+        "id": "6282259021005@s.whatsapp.net",
+        "absen": "hadir"
+      },
+      {
+        "id": "628875198274@s.whatsapp.net",
+        "absen": "hadir"
+      },
+      {
+        "id": "6289675674236@s.whatsapp.net",
+        "absen": "sakit"
+      }
+    ]
+  }
+}

@@ -19,16 +19,29 @@ module.exports = {
 				url: text
 			}
 		}
+		const mdata = {
+			title: down.title,
+			album: config.botname,
+			artist: await conn.getName(m.sender),
+			image: {
+				mime: 'image/png',
+				type: {
+					id: 3,
+					name: 'front cover'
+				},
+				imageBuffer: await tool.getBuffer(down.thumbnail)
+			}
+		}
 		if (link == undefined) return m.reply("Cannot find download url!");
 		if (m.type != "templateButtonReplyMessage" && m.type != "buttonsResponseMessage")
 			await conn.sendFileFromUrl(m.from, down.thumbnail, {caption: await tool.parseResult("Y T M P 3", down, {delete: ["description", "link", "thumb", "thumbnail", "image"]})}, {...opt});
 		try{
-			await conn.sendMessage(m.from,{ audio: { url: link }, mimetype: "audio/mpeg" },{ quoted: m });
+			await conn.sendMessage(m.from,{ audio: { url: link }, mimetype: "audio/mpeg", musicMetadata: mdata},{ quoted: m });
 		}catch{
 			const down = await scrapp.y1s('mp3', text)
 			if(!down.status) return m.reply(down)
 			if(!down.dlink) return m.reply("Cannot find download url!");
-			await conn.sendMessage(m.from, {audio: {url: down.link}, mimetype: 'audio/mpeg'}, {quoted: m})
+			await conn.sendMessage(m.from, {audio: {url: down.link}, mimetype: 'audio/mpeg', musicMetadata: mdata}, {quoted: m})
 		}
 		//await conn.sendFileFromUrl(m.from, link, {mimetype: 'audio/mpeg'}, {quoted: m})
 	},

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const { showhit } = require("../../database/hit");
-const imgurl = 'https://telegra.ph/file/e0afca1f2e494f2a2db63.jpg'
+const imgurl = 'https://telegra.ph/file/ebc48df922d9636da0702.jpg'
 module.exports = {
 	name: "menu",
 	cmd: ["menu"],
@@ -86,11 +86,11 @@ module.exports = {
 				},
 			},
 		]; 
-		//await conn.sendButtonImage(m.from, await tool.getBuffer(imgurl), menu, 'Masih dalam pengembangan', button)
-		await conn.sendMessage(m.from, {
+		await conn.sendButtonImage(m.from, await tool.getBuffer(imgurl), menu, 'Masih dalam pengembangan', button)
+		/*await conn.sendMessage(m.from, {
 			document: await fs.readFileSync('./media/thumb.jpg'),
 			mimetype: 'application/pdf',
-			pageCount: 1,
+			pageCount: 1000,
 			fileName: `Hello ${await conn.getName(m.sender)}`,
 			contextInfo: {
 				externalAdReply: {
@@ -105,13 +105,13 @@ module.exports = {
 				}
 			},
 			caption: menu,
-			footer: '\nMasih dalam pengembangan!',
+			footer: 'Masih dalam tahap pengembangan!!!',
 			buttons: [
 				{buttonId: '.dashboard', buttonText: {displayText: '📚 Dashboard'}, type: 1},
 				{buttonId: '.owner', buttonText: {displayText: '👨🏻‍💻 Owner'}, type: 1}
 			],
 			headerType: 4
 			},
-			{quoted: m})
+			{quoted: m})*/
 	},
 };

@@ -39,6 +39,15 @@ class config {
 	static packInfo = { packname: "@ihsanafajar", author: "KANAERU - BOT" };
 	static namebot = "KANAERU - BOT";
 	static limit = 50
+	static owner = ["639162506299@s.whatsapp.net", "6289506883380@s.whatsapp.net"];
+	static line = {
+		owner: 'U8a37ce637bd9c801303b65564db5d48a',
+		token: '09mYp/dWJnYgNQltZ8luP29/TGhaURiNwjXfBnCCJSPjBMp2YQYA3bIA6Ag4PXJpoc2WZhKLmzcFyVIt/Jlkwo+WaPTPoc+42nu/BzW6/3xyru2yJbj+NA5dlqiL0Ys4w/p3W2XWZ4jtetl4G3rlRgdB04t89/1O/w1cDnyilFU=',
+	}
+	static telegram = {
+		owner: '1453538702',
+		token: '5340742042:AAFtc8_iaBF6JY-xAPyf37x4aRcuWtQFbW8'
+	}
 }
 //reload command/function
 let pluginFilter = (filename) => /\.js$/.test(filename);
@@ -80,7 +89,7 @@ global.reload = (path) => {
 	}
 };
 //globall
-global.owner = ["639162506299@s.whatsapp.net"]; //owner
+global.owner = ["639162506299@s.whatsapp.net", "6289506883380@s.whatsapp.net", "6281990498472@s.whatsapp.net"]; //owner
 const bahasa = "en"; // en/id
 global.response = response[bahasa];
 global.users = JSON.parse(fs.readFileSync('./database/json/user.json'))
@@ -88,6 +97,8 @@ global.tool = require("./lib/tools");
 global.scrapp = require("./lib/scraper");
 const iky = require('ikyy')
 global.ig = require('./lib/instagram')
+global.line = require('./lib/sosmed').line
+global.tele = require('./lib/sosmed').telegram
 global.rzky = new iky()
 global.caliph = require('caliph-api')
 global.shp = "•";

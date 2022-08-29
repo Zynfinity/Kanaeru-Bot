@@ -4,7 +4,7 @@ module.exports = {
 	name: "eval",
 	function: true,
 	category: "owner",
-	async handler(m, { conn, body, isOwner }) {
+	async handler(m, { conn, body, isOwner}) {
 		const util = require("util");
 		try {
 			if (body.startsWith("<")) {

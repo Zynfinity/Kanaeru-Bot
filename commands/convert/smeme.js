@@ -7,6 +7,7 @@ module.exports = {
     category: 'converter',
     query: 'Wrong Format\nExample : .smeme Test|oke',
     async handler(m, {conn, text}){
+        text = text.replace(/\?/g, '')
         let t1 = await encodeurl(text.split('|')[0] ? text.split('|')[0] : '_')
         let t2 = await encodeurl(text.split('|')[1] ? text.split('|')[1] : '_')
         if(m.quoted && (m.quoted.mtype == 'stickerMessage' || m.quoted.mtype == 'imageMessage')){
