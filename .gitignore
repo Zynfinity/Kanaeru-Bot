@@ -1,0 +1,13 @@
+#module
+node_modules
+jadibot
+#session
+kanaeru.json
+config.js
+baileys_store.json
+package-lock.json
+**.mp3
+**.opus
+**.mp4
+**.webp
+**.exif

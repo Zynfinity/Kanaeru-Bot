@@ -5,10 +5,10 @@ module.exports = {
 	owner: true,
 	async handler(m, { conn }) {
 		if (m.command == "self") {
-			attr.isSelf = true;
+			m.user.jadibot ? conn.self = true : attr.isSelf = true;
 			m.reply("Self mode active");
 		} else {
-			attr.isSelf = false;
+			m.user.jadibot ? conn.self = false : attr.isSelf = false;
 			m.reply("Public mode active");
 		}
 	},

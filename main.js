@@ -32,7 +32,7 @@ attr.functions = new Map();
 attr.isSelf = config.self;
 
 // store
-global.store = makeInMemoryStore({
+global.baileysstore = makeInMemoryStore({
 	logger: pino().child({ level: "silent", stream: "store" }),
 });
 /*global.store = makeInMemoryStore({ })
@@ -63,7 +63,6 @@ const connect = async () => {
 		logger: pino({ level: "silent" }),
 		version,
 	});
-	if(config.server) require("./lib/http-server")(conn);
 	conn.mess = [];
 	conn.cooldown = {}
 	global.decodeJid = async(jid) => {
@@ -75,7 +74,7 @@ const connect = async () => {
 			).trim();
 		} else return jid.trim();
 	};
-	store.bind(conn.ev);
+	baileysstore.bind(conn.ev);
 	conn.ev.on("creds.update", saveState);
 	conn.ev.on("connection.update", async (up) => {
 		const { lastDisconnect, connection } = up;
@@ -122,8 +121,8 @@ const connect = async () => {
 	conn.ev.on("contacts.update", (m) => {
 		for (let kontak of m) {
 			let jid = decodeJid(kontak.id);
-			if (store && store.contacts)
-				store.contacts[jid] = { jid, name: kontak.notify };
+			if (baileysstore && baileysstore.contacts)
+				baileysstore.contacts[jid] = { jid, name: kontak.notify };
 		}
 	});
 	//antidelete

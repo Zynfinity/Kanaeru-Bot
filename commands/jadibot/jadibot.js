@@ -5,7 +5,6 @@ module.exports = {
 	cmd: ['jadibot'],
 	category: 'jadibot',
 	private: true,
-disabled: true,
 	async handler(m, {conn}){
 		const {
 			makeInMemoryStore,
@@ -53,6 +52,7 @@ disabled: true,
 			con.store = makeInMemoryStore({logger: pino().child({ level: "silent", stream: "store" })});
 			con.mess = []
 			con.cooldown = {}
+			con.self = false
 			con.store.bind(con.ev);
 			con.try = 1
 			con.ev.on('creds.update', saveCreds)

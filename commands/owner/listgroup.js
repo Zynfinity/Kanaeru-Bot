@@ -9,7 +9,7 @@ module.exports = {
 		const anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
         let teks = `📫 LIST GROUP CHAT\n\nTotal Group : ${anu.length} Group\n\n`
 		for (let i of anu) {
-			let metadata = await conn.groupMetadata(i)
+			let metadata = await conn.groupMetadata(i).catch((e) => console.log(e))
 			teks += `${shp} Nama : ${metadata.subject}\n`
 			teks += `${shp} Owner : ${metadata.owner != undefined ? '@' + metadata.owner.split('@')[0] : '-'}\n`
 			teks += `${shp} ID : ${metadata.id}\n`

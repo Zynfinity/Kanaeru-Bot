@@ -1,5 +1,6 @@
 const fs = require('fs')
 const os = require("os");
+const prettyms = require('pretty-ms')
 const { sizeFormatter } = require("human-readable");
 const formatSize = sizeFormatter({
 	std: "JEDEC",
@@ -25,7 +26,7 @@ module.exports = {
 		text += `${shp} Memory: ${formatSize(os.totalmem() - os.freemem())} / ${formatSize(os.totalmem())}\n`;
 		text += `${shp} Platform: ${os.platform()}\n\n`;
     	text += `BOT STAT\n`
-    	text += `${shp} Runtime : ${await tool.toTimer(await process.uptime())}\n`
+    	text += `${shp} Runtime : ${m.user.jadibot ? await prettyms(Date.now() - conn.user.uptime, {verbose: true}) : await tool.toTimer(process.uptime())}\n`
     	text += `${shp} Speed : ${lat}\n`
    		text += `${shp} Group Join : ${(Object.keys(await conn.groupFetchAllParticipating())).length}`
 		await m.reply(text)
