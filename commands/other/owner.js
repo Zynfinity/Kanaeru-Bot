@@ -3,6 +3,6 @@ module.exports = {
   cmd: ['owner'],
   category: 'other',
   async handler(m, {conn}){
-    await conn.sendContact(m.from, owner, m)
+    await conn.sendContact(m.from, [owner[0]], m)
   }
 }

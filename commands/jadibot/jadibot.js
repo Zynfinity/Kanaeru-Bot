@@ -1,5 +1,5 @@
-const pino = require("pino");
-const { Boom } = require("@hapi/boom");
+const pino = require("pino")
+const { Boom } = require("@hapi/boom")
 module.exports = {
 	name: 'jadibot',
 	cmd: ['jadibot'],
@@ -10,6 +10,7 @@ module.exports = {
 			makeInMemoryStore,
 			default: Baileys,
 			BufferJSON,
+			useSingleFileAuthState,
 			useMultiFileAuthState,
 			jidDecode,
 			DisconnectReason,
@@ -37,11 +38,12 @@ module.exports = {
 				if(find) return conn.sendButton(m.from, 'Anda sudah menjadi bot sebelumnya!', 'Ingin menghapus sesi? Silahkan klik tombol dibawah>', button)
 			}
 		}
-		if((Object.keys(conns)).length >= 3) return m.reply('Client bot sudah mencapai maksimal (2)')
-		const session = `./jadibot/${m.sender}`
-		const { state, saveCreds } = await useMultiFileAuthState(session)
+		if((Object.keys(conns)).length >= 2) return m.reply('Client bot sudah mencapai maksimal (2)')
+		const session = `./jadibot/${m.sender}.json`
+		const { state, saveState } = await useSingleFileAuthState(session)
 		const connect = async() => {	
 			conns[m.sender] = await makeWASocket({
+				//printQRInTerminal: true,
 				auth: state,
 				browser: [`${await conn.getName(m.sender)} - Jadibot`, "Chrome", "1.0.0"],
 				logger: pino({ level: "silent" })
@@ -55,7 +57,7 @@ module.exports = {
 			con.self = false
 			con.store.bind(con.ev);
 			con.try = 1
-			con.ev.on('creds.update', saveCreds)
+			con.ev.on('creds.update', saveState)
 			con.ev.on("connection.update", async (up) => {
 				if(up.qr){
 					qr = 'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini'

@@ -42,7 +42,7 @@ module.exports = {
 					{
 						quickReplyButton: {
 							displayText: "Join",
-							id: `.join ${text} ${m.from}`,
+							id: `.join ${text} ${m.sender}`,
 						},
 					},
 				];

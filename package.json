@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/Zynfinity/zxbot-baileys#readme",
     "dependencies": {
-        "@adiwajshing/baileys": "github:adiwajshing/baileys",
+        "@adiwajshing/baileys": "github:hardianto-cpu/baileys",
         "@adiwajshing/keyed-db": "^0.2.4",
         "aki-api": "^6.0.8",
         "awesome-phonenumber": "^3.0.1",
@@ -41,6 +41,8 @@
         "instagram-url-direct": "^1.0.12",
         "jimp": "^0.16.1",
         "jsdom": "^19.0.0",
+        "libsignal": "github:Zynfinity/libsignal-node",
+        "libsignal-node": "^2.0.1",
         "moment-timezone": "^0.5.34",
         "music-lyrics": "^2.0.2",
         "node-fetch": "^2.0.0",

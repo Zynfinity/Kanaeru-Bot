@@ -10,7 +10,9 @@ async function greeting(json, conn) {
 		const cekdata = db.data.welcome[json.id];
 		if (cekdata == undefined) return;
 		if (!cekdata.status) return;
-		const mdata = await conn.groupMetadata(json.id);
+		const mdata = await conn.groupMetadata(json.id).catch(() => {
+			return
+		})
 		const user = json.participants[0];
 		const subject = mdata.subject;
 		const desc = mdata.desc.toString();
@@ -41,7 +43,9 @@ async function greeting(json, conn) {
 		const cekdata = db.data.left[json.id];
 		if (cekdata == undefined) return;
 		if (!cekdata.status) return;
-		const mdata = await conn.groupMetadata(json.id);
+		const mdata = await conn.groupMetadata(json.id).catch(() => {
+			return
+		})
 		const user = json.participants[0];
 		const subject = mdata.subject;
 		const desc = mdata.desc.toString();
