@@ -4,6 +4,7 @@ module.exports = {
     cmd: ['listbot', 'listjadibot'],
     category: 'jadibot',
     desc: 'Menampilkan list jadibot',
+    disabled: true,
     async handler(m, {conn}){
         if(Object.keys(conns) == '') return m.reply('Tidak ada client bot')
         const array = Object.values(conns).filter(s => s.user)

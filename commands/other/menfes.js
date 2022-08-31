@@ -1,19 +1,37 @@
 module.exports = {
-	name: 'menfes',
+	name: ['menfes', 'stopmenfes'],
 	param: '< Coming Soon >',
-	cmd: ['menfes'],
+	cmd: ['menfes', 'stopmenfes'],
 	category: 'other',
 	desc: 'Berbicara kepada orang yang kamu suka secara anonim\n\nCara Penggunaan : .menfes nomor(diawali kode negara)|pesan',
 	private: true,
 	owner: true,
-	query: 'Example : .menfes 62895xxxxx|I Love You',
 	async handler(m, {conn, text, args}){
+		if(m.command == 'stopmenfes'){
+			const find = Object.values(db.data.menfes).find(id => [id.to, id.id].includes(m.sender))
+			if(!find) return m.reply('Room tidak ditemukan/anda tidak berada didalam room')
+			if(m.sender != find.id) return m.reply('Fitur ini hanya untuk pengirim pesan!')
+			m.reply('*MENFES*\nBerhasil meninggalkan obrolan')
+			await conn.sendMessage(find.to, {text: '*MENFES*\nPengirim telah meninggalkan obrolan'})
+			delete db.data.menfes[find.id]
+			await db.write()
+			return
+		}
+		if(!text) return m.reply('Example : .menfes 62895xxxxx|I Love You')
 		if(args[0] == 'accept' && m.type == "templateButtonReplyMessage"){
 			const find = Object.values(db.data.menfes).find(t => t.to == m.sender)
 			db.data.menfes[find.id].chatting = true
 			await db.write()
 			await m.reply('Anda menerima ajakan chatting dari dia\n\nGood Luck!')
-			return await conn.sendMessage(find.id, {text: 'Dia telah menerima ajakan chatting denganmu\n\nGood Luck Bro & Sis:'})
+			const button = [
+			    {
+					quickReplyButton: {
+			            displayText: "Stop Chat",
+			            id: ".stopmenfes",
+			        },
+			    }
+      		];
+			return await conn.sendButton(find.id, 'Dia telah menerima ajakan chatting denganmu\n\nGood Luck Bro & Sis:', `Ingin stop chat? Silahkan klik tombol dibawah`, button)
 		}
 		else if(args[0] == 'decline' && m.type == "templateButtonReplyMessage"){
 			const find = Object.values(db.data.menfes).find(t => t.to == m.sender)

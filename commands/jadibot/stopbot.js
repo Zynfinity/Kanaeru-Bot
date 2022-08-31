@@ -5,6 +5,7 @@ module.exports = {
     category: 'jadibot',
     desc: 'Berhenti menjadi bot sementara',
     private: true,
+    disabled: true,
     async handler(m, {conn}){
         if(Object.keys(conns) == '') return m.reply('Tidak ada bot sementara yang aktif saat ini')
         const client = conns[m.sender] ? conns[m.sender] : Object.values(conns).find(p => p.user.id.split(':')[0] == m.sender.split('@')[0])

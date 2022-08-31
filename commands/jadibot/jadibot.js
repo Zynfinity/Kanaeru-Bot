@@ -5,6 +5,7 @@ module.exports = {
 	cmd: ['jadibot'],
 	category: 'jadibot',
 	private: true,
+	disabled: true,
 	async handler(m, {conn}){
 		const {
 			makeInMemoryStore,

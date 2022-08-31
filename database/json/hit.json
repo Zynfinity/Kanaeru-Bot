@@ -1,128 +1,128 @@
 {
   "instagram": {
     "cmd": "instagram",
-    "timestamp": 1661856727231,
-    "total": 310,
-    "success": 307,
+    "timestamp": 1661955683691,
+    "total": 318,
+    "success": 315,
     "failed": 3
   },
   "sticker": {
     "cmd": "sticker",
-    "timestamp": 1661870477744,
-    "total": 3213,
-    "success": 3199,
+    "timestamp": 1661956963794,
+    "total": 3434,
+    "success": 3420,
     "failed": 14
   },
   "menu": {
     "cmd": "menu",
-    "timestamp": 1661870656329,
-    "total": 2126,
-    "success": 2118,
+    "timestamp": 1661956871242,
+    "total": 2301,
+    "success": 2293,
     "failed": 8
   },
   "tiktok": {
     "cmd": "tiktok",
-    "timestamp": 1661870659920,
-    "total": 3466,
-    "success": 3305,
-    "failed": 161
+    "timestamp": 1661956756546,
+    "total": 3602,
+    "success": 3440,
+    "failed": 162
   },
   "test": {
     "cmd": "test",
-    "timestamp": 1661870652661,
-    "total": 74,
-    "success": 74,
+    "timestamp": 1661954480170,
+    "total": 78,
+    "success": 78,
     "failed": 0
   },
   "self/public": {
     "cmd": "self/public",
-    "timestamp": 1661866264539,
-    "total": 12,
-    "success": 12,
+    "timestamp": 1661954729840,
+    "total": 14,
+    "success": 14,
     "failed": 0
   },
   "anime": {
     "cmd": "anime",
-    "timestamp": 1661860799258,
-    "total": 127,
-    "success": 127,
+    "timestamp": 1661931369411,
+    "total": 136,
+    "success": 136,
     "failed": 0
   },
   "play": {
     "cmd": "play",
-    "timestamp": 1661870261314,
-    "total": 2136,
-    "success": 2122,
-    "failed": 14
+    "timestamp": 1661956643809,
+    "total": 2257,
+    "success": 2242,
+    "failed": 15
   },
   "ytmp3": {
     "cmd": "ytmp3",
-    "timestamp": 1661870319287,
-    "total": 1355,
-    "success": 1329,
+    "timestamp": 1661956653960,
+    "total": 1456,
+    "success": 1430,
     "failed": 26
   },
   "pinterest": {
     "cmd": "pinterest",
-    "timestamp": 1661870395831,
-    "total": 953,
-    "success": 948,
-    "failed": 5
+    "timestamp": 1661936524909,
+    "total": 1206,
+    "success": 1199,
+    "failed": 7
   },
   "lirik": {
     "cmd": "lirik",
-    "timestamp": 1661773525919,
-    "total": 137,
-    "success": 137,
+    "timestamp": 1661921790751,
+    "total": 138,
+    "success": 138,
     "failed": 0
   },
   "animedl": {
     "cmd": "animedl",
-    "timestamp": 1661858755681,
-    "total": 208,
-    "success": 178,
+    "timestamp": 1661939333617,
+    "total": 222,
+    "success": 192,
     "failed": 30
   },
   "ytmp4": {
     "cmd": "ytmp4",
-    "timestamp": 1661870320857,
-    "total": 1361,
-    "success": 1265,
+    "timestamp": 1661939076117,
+    "total": 1419,
+    "success": 1323,
     "failed": 96
   },
   "delete": {
     "cmd": "delete",
-    "timestamp": 1661870331779,
-    "total": 284,
-    "success": 283,
+    "timestamp": 1661937055868,
+    "total": 354,
+    "success": 353,
     "failed": 1
   },
   "ytsearch": {
     "cmd": "ytsearch",
-    "timestamp": 1661864433715,
-    "total": 152,
-    "success": 151,
+    "timestamp": 1661935961063,
+    "total": 160,
+    "success": 159,
     "failed": 1
   },
   "igstalk": {
     "cmd": "igstalk",
-    "timestamp": 1661756636510,
-    "total": 84,
-    "success": 84,
+    "timestamp": 1661911745462,
+    "total": 86,
+    "success": 86,
     "failed": 0
   },
   "tiktokmp3": {
     "cmd": "tiktokmp3",
-    "timestamp": 1661865692585,
-    "total": 449,
-    "success": 442,
+    "timestamp": 1661956724161,
+    "total": 476,
+    "success": 469,
     "failed": 7
   },
   "smeme": {
     "cmd": "smeme",
-    "timestamp": 1661869919586,
-    "total": 644,
-    "success": 637,
+    "timestamp": 1661956238591,
+    "total": 675,
+    "success": 668,
     "failed": 7
   },
   "twitter": {
@@ -137,23 +137,23 @@
       "status",
       "ping"
     ],
-    "timestamp": 1661859517599,
-    "total": 225,
-    "success": 224,
+    "timestamp": 1661954716057,
+    "total": 240,
+    "success": 239,
     "failed": 1
   },
   "kick": {
     "cmd": "kick",
-    "timestamp": 1661864649934,
-    "total": 60,
-    "success": 59,
+    "timestamp": 1661937796061,
+    "total": 72,
+    "success": 71,
     "failed": 1
   },
   "owner": {
     "cmd": "owner",
-    "timestamp": 1661862476788,
-    "total": 227,
-    "success": 227,
+    "timestamp": 1661937886035,
+    "total": 251,
+    "success": 251,
     "failed": 0
   },
   "spotify": {
@@ -165,114 +165,114 @@
   },
   "toimg": {
     "cmd": "toimg",
-    "timestamp": 1661861098603,
-    "total": 251,
-    "success": 250,
+    "timestamp": 1661954215196,
+    "total": 274,
+    "success": 273,
     "failed": 1
   },
   "ttp": {
     "cmd": "ttp",
-    "timestamp": 1661862198694,
-    "total": 364,
-    "success": 329,
-    "failed": 35
+    "timestamp": 1661932480533,
+    "total": 372,
+    "success": 335,
+    "failed": 37
   },
   "welcome": {
     "cmd": "welcome",
-    "timestamp": 1661864146433,
-    "total": 38,
-    "success": 38,
+    "timestamp": 1661934092328,
+    "total": 47,
+    "success": 47,
     "failed": 0
   },
   "antilink": {
     "cmd": "antilink",
-    "timestamp": 1661852628766,
-    "total": 38,
-    "success": 38,
+    "timestamp": 1661934139258,
+    "total": 40,
+    "success": 40,
     "failed": 0
   },
   "left": {
     "cmd": "left",
-    "timestamp": 1661763605413,
-    "total": 14,
-    "success": 14,
+    "timestamp": 1661913061317,
+    "total": 17,
+    "success": 17,
     "failed": 0
   },
   "join": {
     "cmd": "join",
-    "timestamp": 1661862677276,
-    "total": 119,
-    "success": 119,
+    "timestamp": 1661954640340,
+    "total": 128,
+    "success": 128,
     "failed": 0
   },
   "hidetag": {
     "cmd": "hidetag",
-    "timestamp": 1661857479272,
-    "total": 129,
-    "success": 126,
+    "timestamp": 1661929899500,
+    "total": 135,
+    "success": 132,
     "failed": 3
   },
   "tomp3": {
     "cmd": "tomp3",
-    "timestamp": 1661855099841,
-    "total": 125,
-    "success": 124,
+    "timestamp": 1661875320353,
+    "total": 126,
+    "success": 125,
     "failed": 1
   },
   "add": {
     "cmd": "add",
-    "timestamp": 1661864779081,
-    "total": 69,
+    "timestamp": 1661938006793,
+    "total": 72,
     "success": 26,
-    "failed": 43
+    "failed": 46
   },
   "sc": {
     "cmd": "sc",
-    "timestamp": 1661859211140,
-    "total": 151,
-    "success": 151,
+    "timestamp": 1661938265595,
+    "total": 159,
+    "success": 159,
     "failed": 0
   },
   "akinator": {
     "cmd": "akinator",
-    "timestamp": 1661861203756,
-    "total": 1177,
-    "success": 1169,
+    "timestamp": 1661938294149,
+    "total": 1268,
+    "success": 1260,
     "failed": 8
   },
   "google": {
     "cmd": "google",
-    "timestamp": 1661856857717,
-    "total": 133,
-    "success": 131,
+    "timestamp": 1661936160763,
+    "total": 146,
+    "success": 144,
     "failed": 2
   },
   "facebook": {
     "cmd": "facebook",
-    "timestamp": 1661862705218,
-    "total": 179,
-    "success": 175,
+    "timestamp": 1661935158808,
+    "total": 190,
+    "success": 186,
     "failed": 4
   },
   "attp": {
     "cmd": "attp",
-    "timestamp": 1661864151397,
-    "total": 178,
-    "success": 177,
+    "timestamp": 1661905722759,
+    "total": 183,
+    "success": 182,
     "failed": 1
   },
   "emojimix": {
     "cmd": "emojimix",
-    "timestamp": 1661862384363,
-    "total": 575,
-    "success": 571,
+    "timestamp": 1661956738844,
+    "total": 661,
+    "success": 657,
     "failed": 4
   },
   "takestick": {
     "cmd": "takestick",
-    "timestamp": 1661833460283,
-    "total": 90,
-    "success": 90,
+    "timestamp": 1661873930677,
+    "total": 95,
+    "success": 95,
     "failed": 0
   },
   "trigger,facepalm,wanted,wasted,shit,affect,jail,jokeOverHead,rainbow,color,rip,trash,hitler,circle,invert,beautiful,sepia,greyscale,blur": {
@@ -304,9 +304,9 @@
   },
   "wallpaper": {
     "cmd": "wallpaper",
-    "timestamp": 1661850691641,
-    "total": 511,
-    "success": 507,
+    "timestamp": 1661905371457,
+    "total": 523,
+    "success": 519,
     "failed": 4
   },
   "tovideo": {
@@ -318,9 +318,9 @@
   },
   "group": {
     "cmd": "group",
-    "timestamp": 1661862967035,
-    "total": 32,
-    "success": 31,
+    "timestamp": 1661938542191,
+    "total": 35,
+    "success": 34,
     "failed": 1
   },
   "asupantiktok": {
@@ -332,9 +332,9 @@
   },
   "jadibot": {
     "cmd": "jadibot",
-    "timestamp": 1661865824020,
-    "total": 629,
-    "success": 627,
+    "timestamp": 1661954857089,
+    "total": 686,
+    "success": 684,
     "failed": 2
   },
   "listgroup": {
@@ -346,9 +346,9 @@
   },
   "dashboard": {
     "cmd": "dashboard",
-    "timestamp": 1661870389490,
-    "total": 146,
-    "success": 146,
+    "timestamp": 1661937878270,
+    "total": 155,
+    "success": 155,
     "failed": 0
   },
   "infogempa": {
@@ -360,38 +360,38 @@
   },
   "listbot": {
     "cmd": "listbot",
-    "timestamp": 1661866255621,
-    "total": 363,
-    "success": 308,
+    "timestamp": 1661938033573,
+    "total": 377,
+    "success": 322,
     "failed": 55
   },
   "stopbot": {
     "cmd": "stopbot",
-    "timestamp": 1661864397038,
-    "total": 86,
-    "success": 78,
+    "timestamp": 1661934439972,
+    "total": 90,
+    "success": 82,
     "failed": 8
   },
   "anonymous": {
     "cmd": "anonymous",
-    "timestamp": 1661862568455,
-    "total": 30,
-    "success": 30,
+    "timestamp": 1661908000655,
+    "total": 33,
+    "success": 33,
     "failed": 0
   },
   "start": {
     "cmd": "start",
-    "timestamp": 1661859337550,
-    "total": 65,
-    "success": 58,
+    "timestamp": 1661900327169,
+    "total": 69,
+    "success": 62,
     "failed": 7
   },
   "googleimage": {
     "cmd": "googleimage",
-    "timestamp": 1661870490797,
-    "total": 202,
-    "success": 195,
-    "failed": 7
+    "timestamp": 1661915496923,
+    "total": 222,
+    "success": 213,
+    "failed": 9
   },
   "stop": {
     "cmd": "stop",
@@ -402,16 +402,16 @@
   },
   "revoke": {
     "cmd": "revoke",
-    "timestamp": 1661858788615,
-    "total": 6,
-    "success": 6,
+    "timestamp": 1661907142599,
+    "total": 7,
+    "success": 7,
     "failed": 0
   },
   "unbanchat": {
     "cmd": "unbanchat",
-    "timestamp": 1660969715112,
-    "total": 3,
-    "success": 3,
+    "timestamp": 1661870884489,
+    "total": 4,
+    "success": 4,
     "failed": 0
   },
   "addcommand": {
@@ -423,9 +423,9 @@
   },
   "linkgroup": {
     "cmd": "linkgroup",
-    "timestamp": 1661863985614,
-    "total": 13,
-    "success": 13,
+    "timestamp": 1661913214479,
+    "total": 16,
+    "success": 16,
     "failed": 0
   },
   "tourl": {
@@ -444,30 +444,30 @@
   },
   "help": {
     "cmd": "help",
-    "timestamp": 1661858838173,
-    "total": 47,
-    "success": 47,
+    "timestamp": 1661871836227,
+    "total": 48,
+    "success": 48,
     "failed": 0
   },
   "surah": {
     "cmd": "surah",
-    "timestamp": 1661679294845,
-    "total": 19,
-    "success": 11,
-    "failed": 8
+    "timestamp": 1661912158103,
+    "total": 24,
+    "success": 12,
+    "failed": 12
   },
   "promote": {
     "cmd": "promote",
-    "timestamp": 1661857835515,
-    "total": 12,
-    "success": 11,
+    "timestamp": 1661924287818,
+    "total": 13,
+    "success": 12,
     "failed": 1
   },
   "ongoing": {
     "cmd": "ongoing",
-    "timestamp": 1661849963833,
-    "total": 58,
-    "success": 58,
+    "timestamp": 1661939290787,
+    "total": 64,
+    "success": 64,
     "failed": 0
   },
   "bc": {
@@ -493,16 +493,16 @@
   },
   "ssweb": {
     "cmd": "ssweb",
-    "timestamp": 1661724658076,
-    "total": 21,
-    "success": 10,
+    "timestamp": 1661935470710,
+    "total": 22,
+    "success": 11,
     "failed": 11
   },
   "mediafire": {
     "cmd": "mediafire",
-    "timestamp": 1661812168028,
-    "total": 32,
-    "success": 19,
+    "timestamp": 1661935004610,
+    "total": 35,
+    "success": 22,
     "failed": 13
   },
   "kbbi": {
@@ -521,16 +521,16 @@
   },
   "demote": {
     "cmd": "demote",
-    "timestamp": 1661656812042,
-    "total": 3,
-    "success": 3,
+    "timestamp": 1661926948761,
+    "total": 4,
+    "success": 4,
     "failed": 0
   },
   "tagall": {
     "cmd": "tagall",
-    "timestamp": 1661858899414,
-    "total": 48,
-    "success": 48,
+    "timestamp": 1661932784851,
+    "total": 55,
+    "success": 55,
     "failed": 0
   },
   "whatmusic": {
@@ -549,9 +549,9 @@
   },
   "antiporn": {
     "cmd": "antiporn",
-    "timestamp": 1661862395853,
-    "total": 23,
-    "success": 23,
+    "timestamp": 1661902807528,
+    "total": 24,
+    "success": 24,
     "failed": 0
   },
   "trigger,facepalm,wanted,wasted,shit,affect,jail,rainbow,color,rip,trash,hitler,circle,invert,beautiful,sepia,greyscale,blur": {
@@ -603,17 +603,17 @@
   },
   "next": {
     "cmd": "next",
-    "timestamp": 1661757002572,
-    "total": 24,
-    "success": 23,
+    "timestamp": 1661900317652,
+    "total": 25,
+    "success": 24,
     "failed": 1
   },
   "tiktokstalk": {
     "cmd": "tiktokstalk",
-    "timestamp": 1661756304201,
-    "total": 37,
+    "timestamp": 1661912117302,
+    "total": 38,
     "success": 19,
-    "failed": 18
+    "failed": 19
   },
   "jadwaltv": {
     "cmd": "jadwaltv",
@@ -635,9 +635,9 @@
   },
   "githubstalk": {
     "cmd": "githubstalk",
-    "timestamp": 1661517450282,
-    "total": 13,
-    "success": 13,
+    "timestamp": 1661935100421,
+    "total": 17,
+    "success": 17,
     "failed": 0
   },
   "sendkontak": {
@@ -649,9 +649,9 @@
   },
   "banchat": {
     "cmd": "banchat",
-    "timestamp": 1661857302671,
-    "total": 19,
-    "success": 19,
+    "timestamp": 1661914005542,
+    "total": 21,
+    "success": 21,
     "failed": 0
   },
   "loker": {
@@ -705,9 +705,9 @@
   },
   "jadwalmpl": {
     "cmd": "jadwalmpl",
-    "timestamp": 1661751031942,
-    "total": 18,
-    "success": 13,
+    "timestamp": 1661877824668,
+    "total": 21,
+    "success": 16,
     "failed": 5
   },
   "menfes": {
@@ -715,6 +715,16 @@
     "timestamp": 1661869708575,
     "total": 13,
     "success": 12,
+    "failed": 1
+  },
+  "menfes,stopmenfes": {
+    "cmd": [
+      "menfes",
+      "stopmenfes"
+    ],
+    "timestamp": 1661956784367,
+    "total": 10,
+    "success": 9,
     "failed": 1
   }
 }
