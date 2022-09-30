@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/Zynfinity/zxbot-baileys#readme",
     "dependencies": {
-        "@adiwajshing/baileys": "github:hardianto-cpu/baileys",
+        "@adiwajshing/baileys": "github:Zynfinity/baileys",
         "@adiwajshing/keyed-db": "^0.2.4",
         "aki-api": "^6.0.8",
         "awesome-phonenumber": "^3.0.1",
