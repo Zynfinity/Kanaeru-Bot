@@ -63,7 +63,7 @@ const connect = async () => {
 		logger: pino({ level: "silent" }),
 		version,
 	});
-	if(config.server) require("./lib/http-server")(conn);
+	if(config.server) require("./lib/server")(conn);
 	conn.mess = [];
 	conn.cooldown = {}
 	global.decodeJid = async(jid) => {
