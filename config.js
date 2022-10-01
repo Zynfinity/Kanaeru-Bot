@@ -29,7 +29,7 @@ const response = {
 }
 class config {
 	static botname = "KANAERU - BOT";
-	static server = false
+	static server = true
 	static email = 'fajarihsana15@gmail.com'
 	static instagram = 'https://ihsanafajar.blogspot.com'
 	static prefixs = "multi"; //set ., #, and etc if you want single prefix example: const prefixs = '.'
