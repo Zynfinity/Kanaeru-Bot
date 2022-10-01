@@ -87,8 +87,8 @@ module.exports = {
 				},
 			},
 		]; 
-		await conn.sendButtonImage(m.from, await tool.getBuffer(imgurl), menu, 'Masih dalam pengembangan', button)
-		/*await conn.sendMessage(m.from, {
+		//await conn.sendButtonImage(m.from, await tool.getBuffer(imgurl), menu, 'Masih dalam pengembangan', button)
+		await conn.sendMessage(m.from, {
 			document: await fs.readFileSync('./media/thumb.jpg'),
 			mimetype: 'application/pdf',
 			pageCount: 1000,
@@ -113,6 +113,6 @@ module.exports = {
 			],
 			headerType: 4
 			},
-			{quoted: m})*/
+			{quoted: m})
 	},
 };
