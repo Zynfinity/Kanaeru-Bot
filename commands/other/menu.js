@@ -86,8 +86,9 @@ module.exports = {
 					id: ".dashboard",
 				},
 			},
-		]; 
-		//await conn.sendButtonImage(m.from, await tool.getBuffer(imgurl), menu, 'Masih dalam pengembangan', button)
+		];
+		await m.reply(menu, {withTag: true})
+		/*await conn.sendButtonImage(m.from, await tool.getBuffer(imgurl), menu, 'Masih dalam pengembangan', button)
 		await conn.sendMessage(m.from, {
 			document: await fs.readFileSync('./media/thumb.jpg'),
 			mimetype: 'application/pdf',
@@ -113,6 +114,6 @@ module.exports = {
 			],
 			headerType: 4
 			},
-			{quoted: m})
+			{quoted: m})*/
 	},
 };
