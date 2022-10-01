@@ -6,6 +6,7 @@ module.exports = {
   category: 'converter',
   desc: 'Create sticker animated text',
   query: 'Enter parameter <text>\nExample: .attp test',
+  disabled: true,
   async handler(m, {conn, text}){
     await m.reply(response.wait)
     const sttp = await scrapp.attp(text)
