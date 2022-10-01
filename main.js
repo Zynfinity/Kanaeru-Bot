@@ -151,12 +151,13 @@ const connect = async () => {
 connect();
 let file = require.resolve(__filename);
 Object.freeze(global.reload)
-var watcher = chokidar.watch('./commands', { ignored: /^\./, persistent: true });
+/*var watcher = chokidar.watch('./commands', { ignored: /^\./, persistent: true });
 watcher
   .on('error', function(error) { console.error('Error happened', error); })
   .on('add', function(path) { global.reload(path) })
   .on('change', function(path) { global.reload(path) })
   .on('unlink', function(path) { global.reload(path) })
+  */
 process.on("uncaughtException", function(err) {
   console.error(err);
 });
