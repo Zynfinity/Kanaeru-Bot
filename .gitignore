@@ -1,6 +1,5 @@
 #module
 node_modules
-kanaeru.json
 config.js
 baileys_store.json
 package-lock.json
