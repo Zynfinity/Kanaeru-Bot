@@ -1,7 +1,6 @@
 #module
 node_modules
 config.js
-baileys_store.json
 package-lock.json
 **.mp3
 **.opus
