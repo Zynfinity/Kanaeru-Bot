@@ -4,7 +4,6 @@ module.exports = {
 	param: "<reason>",
 	cmd: ["afk"],
 	category: "group",
-	disabled: true,
 	desc: "Away From Keyboard",
 	async handler(m, { conn, text }) {
 		const afk = JSON.parse(fs.readFileSync("./database/json/afk.json"));
