@@ -6,6 +6,7 @@ module.exports = {
 	category: "downloader",
 	desc: "Search And Download song from spotify",
 	query: true,
+	disabled: true,
 	async handler(m, { conn, text }) {
 		await m.reply(response.wait);
 		const { data } = await axios.get(`https://spotifydl-production.up.railway.app/search?query=${text}`);
